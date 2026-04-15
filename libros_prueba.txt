@@ -1,0 +1,9 @@
+# Datos de prueba para libros
+# Formato: Titulo|Autor|Año|ISBN
+Cien años de soledad|Gabriel García Márquez|1967|978-0307474728
+Don Quijote de la Mancha|Miguel de Cervantes|1605|978-8491050297
+Rayuela|Julio Cortázar|1963|978-8437604947
+La sombra del viento|Carlos Ruiz Zafón|2001|978-8408172177
+Pedro Páramo|Juan Rulfo|1955|978-6070725739
+El amor en los tiempos del cólera|Gabriel García Márquez|1985|978-0307389732
+Fervor de Buenos Aires|Jorge Luis Borges|1923|978-9500426026
