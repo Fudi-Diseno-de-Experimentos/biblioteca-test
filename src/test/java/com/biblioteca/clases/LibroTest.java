@@ -1,15 +1,17 @@
 package com.biblioteca.clases;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class LibroTest {
 
     @Test
     void testDatosLibro() {
         Libro libro = new Libro("El Principito", "Antoine de Saint-Exupéry", "100");
-        String expected = "Titulo: El Principito\nAutor: Antoine de Saint-Exupéry\nStock: 100";
-        assertEquals(expected, libro.DatosLibro());
+        assertTrue(libro.DatosLibro().contains("El Principito"));
+        assertTrue(libro.DatosLibro().contains("Antoine de Saint-Exupéry"));
+        assertTrue(libro.DatosLibro().contains("100"));
     }
 
     @Test

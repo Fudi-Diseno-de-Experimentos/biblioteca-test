@@ -21,11 +21,7 @@ public class Libro {
     }
 
     public boolean buscarAutor(String autor) {
-        if (this.autor.equals(autor)) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.autor.equals(autor);
     }
 
     public boolean buscarFactory(String atributo, String valor) {
