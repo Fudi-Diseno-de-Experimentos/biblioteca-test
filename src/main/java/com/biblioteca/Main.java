@@ -27,6 +27,19 @@ public class Main {
         System.out.println("\nBuscar Atributo valor");
         biblioteca.buscarAtributoValor("stock", "100");
 
+        System.out.println("\nEditar Atributo valor");
+        biblioteca.editarLibro(3,"stock", "50");
+        biblioteca.mostrarLibroPorId(3);
+
+        biblioteca.editarLibro(0, "stock", "50");
+        Libro libro = new Libro("El Principito", "Antoine de Saint-Exupéry", "50");
+
+        biblioteca.mostrarLibroPorId(0);
+        System.out.println(libro.DatosLibro());
+
+        Libro temp = biblioteca.getInventario().get(0);
+        System.out.println(temp.DatosLibro());
+
 
         System.out.println("Goodbye!");
     }

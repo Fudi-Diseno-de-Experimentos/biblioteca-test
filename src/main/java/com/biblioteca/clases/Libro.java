@@ -38,7 +38,36 @@ public class Libro {
         } else {
             return false;
         }
-
     }
+
+    public boolean editarFactory(String atributo, String nuevoValor) {
+        if ("titulo".equals(atributo)) {
+            this.titulo = nuevoValor;
+            return true;
+        } else if ("autor".equals(atributo)) {
+            this.autor = nuevoValor;
+            return true;
+        } else if ("stock".equals(atributo)) {
+            this.stock = nuevoValor;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public String getFactory(String atributo) {
+        if ("titulo".equals(atributo)) {
+            return this.titulo;
+        } else if ("autor".equals(atributo)) {
+            return this.autor;
+        } else if ("stock".equals(atributo)) {
+            return this.stock;
+        } else {
+            return null;
+        }
+    }
+
+
+
 
 }

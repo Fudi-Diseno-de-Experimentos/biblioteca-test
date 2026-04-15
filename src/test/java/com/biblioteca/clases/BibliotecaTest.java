@@ -21,4 +21,13 @@ class BibliotecaTest {
         biblioteca.agregarLibro("RURI DRAGON", "Neil", "100");
         assertTrue(biblioteca.eliminarLibro(0));
     }
+
+    @Test
+    void testEditarLibro() {
+        Biblioteca biblioteca = new Biblioteca();
+        biblioteca.agregarLibro("El Principito", "Antoine de Saint-Exupéry", "100");
+        biblioteca.editarLibro(0, "stock", "50");
+
+        assertEquals("50", biblioteca.getInventario().get(0).getFactory("stock"));
+    }
 }

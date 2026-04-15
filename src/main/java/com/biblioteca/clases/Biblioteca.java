@@ -71,6 +71,20 @@ public class Biblioteca {
         }
     }
 
+    public Libro editarLibro(int indice, String atributo, String nuevoValor) {
+        if (indice < 0 || indice >= inventario.size()) {
+            return null;
+        }
+        Libro libro = inventario.get(indice);
+        if (libro.editarFactory(atributo, nuevoValor)) {
+            return libro;
+        } else {
+            return null;
+        }
+
+
+    }
+
     public List<Libro> getInventario() {
         return inventario;
     }
