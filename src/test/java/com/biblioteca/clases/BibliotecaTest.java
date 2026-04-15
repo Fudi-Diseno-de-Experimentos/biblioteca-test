@@ -1,7 +1,8 @@
 package com.biblioteca.clases;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class BibliotecaTest {
 
@@ -28,6 +29,6 @@ class BibliotecaTest {
         biblioteca.agregarLibro("El Principito", "Antoine de Saint-Exupéry", "100");
         biblioteca.editarLibro(0, "stock", "50");
 
-        assertEquals("50", biblioteca.getInventario().get(0).getFactory("stock"));
+        assertTrue(biblioteca.getInventario().get(0).buscarFactory("stock", "50"));
     }
 }
